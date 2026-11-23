@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ion-color-primary: #fde047; /* Amarillo eléctrico brutalista */
+  --ion-color-primary-rgb: 253, 224, 71;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #e0c53e;
+  --ion-color-primary-tint: #fde359;
+
+  --ion-background-color: #fffbeb; /* Fondo crema cálido de alto contraste */
+  --ion-text-color: #000000;
+  --ion-font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+/* Ajustes para romper el redondeo de Ionic (Shadow DOM) */
+ion-toolbar {
+  --border-width: 0 0 3px 0;
+  --border-color: #000000;
+}
+
+ion-searchbar.brutal-search {
+  --background: #ffffff;
+  --color: #000000;
+  --placeholder-color: #52525b;
+  --icon-color: #000000;
+  --border-radius: 0px;
+  --box-shadow: 4px 4px 0px 0px #000000;
+  padding: 0 !important;
+}
+
+ion-searchbar.brutal-search .searchbar-input-container {
+  border: 2px solid #000000;
+}
+
+ion-segment.brutal-segment {
+  --background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+/* CORREGIDO: Fondo negro y texto amarillo en la pestaña activa para máximo contraste */
+ion-segment-button {
+  --border-radius: 0px;
+  --background-checked: #000000;
+  --indicator-color: #000000;
+  --color: #000000;
+  --color-checked: #fde047;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+ion-fab-button.brutal-fab {
+  --background: #ff4d4d;
+  --background-activated: #000000;
+  --color: #000000;
+  --color-activated: #fde047;
+  --border-radius: 0px;
+  --border-width: 3px;
+  --border-style: solid;
+  --border-color: #000000;
+  --box-shadow: 5px 5px 0px 0px #000000;
+}
